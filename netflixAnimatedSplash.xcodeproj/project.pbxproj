@@ -13,6 +13,8 @@
 		978A7C6427E98822005B5F65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 978A7C6327E98822005B5F65 /* Preview Assets.xcassets */; };
 		978A7C6B27E989E3005B5F65 /* netflix.gif in Resources */ = {isa = PBXBuildFile; fileRef = 978A7C6A27E989E3005B5F65 /* netflix.gif */; };
 		978A7C6E27E98A21005B5F65 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A7C6D27E98A21005B5F65 /* SplashScreen.swift */; };
+		978A7C7127E98DB6005B5F65 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 978A7C7027E98DB6005B5F65 /* SDWebImageSwiftUI */; };
+		978A7C7427E999E2005B5F65 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A7C7327E999E2005B5F65 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		978A7C6327E98822005B5F65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		978A7C6A27E989E3005B5F65 /* netflix.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = netflix.gif; path = ../../../../netflix.gif; sourceTree = "<group>"; };
 		978A7C6D27E98A21005B5F65 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		978A7C7227E994D6005B5F65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		978A7C7327E999E2005B5F65 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				978A7C7127E98DB6005B5F65 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +60,7 @@
 		978A7C5B27E98821005B5F65 /* netflixAnimatedSplash */ = {
 			isa = PBXGroup;
 			children = (
+				978A7C7227E994D6005B5F65 /* Info.plist */,
 				978A7C6C27E98A14005B5F65 /* View */,
 				978A7C5C27E98821005B5F65 /* netflixAnimatedSplashApp.swift */,
 				978A7C6A27E989E3005B5F65 /* netflix.gif */,
@@ -77,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				978A7C6D27E98A21005B5F65 /* SplashScreen.swift */,
+				978A7C7327E999E2005B5F65 /* Home.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +104,9 @@
 			dependencies = (
 			);
 			name = netflixAnimatedSplash;
+			packageProductDependencies = (
+				978A7C7027E98DB6005B5F65 /* SDWebImageSwiftUI */,
+			);
 			productName = netflixAnimatedSplash;
 			productReference = 978A7C5927E98821005B5F65 /* netflixAnimatedSplash.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +135,9 @@
 				Base,
 			);
 			mainGroup = 978A7C5027E98821005B5F65;
+			packageReferences = (
+				978A7C6F27E98DB6005B5F65 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 978A7C5A27E98821005B5F65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -154,6 +167,7 @@
 			files = (
 				978A7C6E27E98A21005B5F65 /* SplashScreen.swift in Sources */,
 				978A7C5F27E98821005B5F65 /* ContentView.swift in Sources */,
+				978A7C7427E999E2005B5F65 /* Home.swift in Sources */,
 				978A7C5D27E98821005B5F65 /* netflixAnimatedSplashApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,9 +301,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"netflixAnimatedSplash/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = netflixAnimatedSplash/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,9 +329,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"netflixAnimatedSplash/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = netflixAnimatedSplash/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -355,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		978A7C6F27E98DB6005B5F65 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		978A7C7027E98DB6005B5F65 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 978A7C6F27E98DB6005B5F65 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 978A7C5127E98821005B5F65 /* Project object */;
 }
